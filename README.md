@@ -39,11 +39,11 @@ git clone https://github.com/michaelmernin/github_users_restful_service.git
 
 ### Build JAR with gradle wrapper
 ```sh
-> {project_directory} ./gradlew build
+> {project_directory} gradlew build
 ```
 ### Run JAR
 ```sh
-> {project_directory} ./gradlew run
+> {project_directory} java -jar build/libs/gitusers-0.0.1-SNAPSHOT.jar
 ```
 
 # Making Request (GET)
