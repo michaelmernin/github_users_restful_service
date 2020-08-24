@@ -65,7 +65,7 @@ RESPONSE:
   "avatar": "https://avatars1.githubusercontent.com/u/23459391?v=4",
   "geo_location": "Minneapolis, MN",
   "email": null,
-  "url": "https://api.github.com/users/michaelmernin",
+  "url": "https://github.com/michaelmernin",
   "created_at": "2016-11-14 17:32:05",
   "repos": [
     {
