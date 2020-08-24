@@ -20,7 +20,7 @@ public class ResponseBuilder {
         ObjectNode userData = (ObjectNode) exchange.getProperty(ApiConstants.GIT_USER_DATA_BODY);
         List<ObjectNode> userRepos = (List<ObjectNode>) exchange.getProperty(ApiConstants.GIT_USER_REPO_DATA_BODIES);
         ResponseObject responseObject = new ResponseObject(userData);
-        userRepos.forEach(repo -> responseObject.addRepo(new RepoObject(repo.get("name"), repo.get("url"))));
+        userRepos.forEach(repo -> responseObject.addRepo(new RepoObject(repo.get("name"), repo.get("svn_url"))));
         exchange.getOut().setBody(responseObject);
         exchange.getOut().setHeader("CamelHttpResponseCode", ApiConstants.SUCCESS_STATUS_CODE);
         exchange.getOut().setHeader("Content-Type", "application/json");
