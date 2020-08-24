@@ -45,7 +45,7 @@ public class ResponseObject {
         this.avatar = userData.get("avatar_url");
         this.geoLocation = userData.get("location");
         this.email = userData.get("email");
-        this.url = userData.get("url");
+        this.url = userData.get("html_url");
         this.setCreatedBy(userData.get("created_at"));
         this.repos = new ArrayList<>();
     }
